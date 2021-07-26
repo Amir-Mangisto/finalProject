@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header id="topPage">
       <nav>
         <ul>
-          <li><a class="active" href="#">בית</a></li>
-          <li><a class="active" href="#">הספדים</a></li>
-          <li><a class="active" href="#">גלריה</a></li>
-          <li><a class="active" href="#">וידאו</a></li>
+          <li><a class="activeLink" href="#">בית</a></li>
+          <li><a class="activeLink" href="#">הספדים</a></li>
+          <li><a class="activeLink" href="#">גלריה</a></li>
+          <li><a class="activeLink" href="#">וידאו</a></li>
         </ul>
       </nav>
     </header>
@@ -23,7 +23,7 @@
         <h6>אתר הנצחה לזכר</h6>
         <p>רוני דניאל 29.10.1947 - 26.07.2021</p>
       </div>
-      <hr />
+      <hr>
       <h1>ביוגרפיה</h1>
       <section class="firstTitle">
       <article class="firstArticle">
@@ -61,11 +61,18 @@
       </article>
       <article class="secondArticle">
           <div class="profileImage">
-        <img src="./media/img/Roni profile.jpg" alt="profile" />
+        <img class="roniImage" src="./media/img/Roni profile.jpg" alt="profile" />
     </div>
       </article>
     </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <span>
+            @זכויות שמורות ל-
+        </span>
+        <a class="topLink" href="#topPage">
+            Top Page-click here
+        </a>
+    </footer>
   </body>
 </html>
