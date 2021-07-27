@@ -9,8 +9,8 @@ body{
 .bjImg img{
     width: 400px;
     height: 8vh;
-    margin-left: 500px;
-    margin-top: 10px
+    margin-left: 33%;
+    margin-top: 2%;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Wendy+One&display=swap');
@@ -131,13 +131,17 @@ h1{
         justify-content: center;
     }
     header ul li{
-        border-bottom: 1px solid darkblue;
+        border-bottom: 1px solid gold;
         text-align: center;
     }
-    /* .roniImage{
-        width: 350px;
-        height: auto;
-    } */
+    .bjImg img{
+        width: 400px;
+        height: 8vh;
+        margin-left: 33%;
+        margin-top: 2%;
+    }
+    
+    
 }
  @media screen and (max-width:425px) {
      header{
@@ -147,5 +151,12 @@ h1{
         display: block;
         padding: 8px 90px;
     }
+    .bjImg img{
+        width: 200px;
+        height: 8vh;
+        margin-left: 33%;
+        margin-top: 2%;
+    }
+    
 
 } 

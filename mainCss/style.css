@@ -61,11 +61,6 @@ h1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-/* .profileImage{
-    width: 30%;
-    height: 20vh;
-} */
-
 .roniImage{
     width: 600px;
     height: auto;
@@ -103,12 +98,7 @@ h1{
     height: fit-content;
 }
 
-/* .secondArticle{
-    display: flex;
-    flex-wrap: wrap;
-    width: 10%;
-    height: fit-content;
-} */
+
 
 .footer {
     height: 70px;
@@ -127,18 +117,6 @@ h1{
  .topLink:hover{
      color: black;
  }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media screen and (max-width:768px) {

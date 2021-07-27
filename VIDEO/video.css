@@ -8,6 +8,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 header{
     height: 12vh;
     background-color: white;
@@ -41,3 +42,56 @@ header ul li a{
 .activeLink:hover{
     background-color: rgb(46, 184, 11);
 }
+#firstPara{
+    color: white;
+    text-align: center;
+}
+.videos{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content:space-around;
+    height: 200vh;
+}
+
+.secondVideo{
+    color: white;
+    text-align: center;
+} 
+
+.thirdVideo{
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width:768px) {
+ 
+    header{
+        height: fit-content;
+    }
+    header ul{
+        padding: 10px 20px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    header ul li{
+        border-bottom: 1px solid gold;
+        text-align: center;
+    }
+
+    
+    
+}
+ @media screen and (max-width:425px) {
+     header{
+        height: fit-content;
+    }
+    header ul{
+        display: block;
+        padding: 8px 90px;
+    }
+
+    
+
+} 
