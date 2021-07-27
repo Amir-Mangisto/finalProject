@@ -41,6 +41,7 @@ header ul li a{
 .active {
     background: #0e3a66;
     border: 4px solid white;
+    border-radius: 30%;
 }
 .active:hover{
     background-color: gray;
@@ -73,7 +74,7 @@ form{
     text-align: center;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:768px) {
  
     header{
         height: fit-content;
