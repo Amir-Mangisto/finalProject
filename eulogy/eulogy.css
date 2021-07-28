@@ -2,9 +2,11 @@
     margin: 0;
     padding: 0;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 :root{
-    --yellow:#595260
+    --Darkblue:#0e3a66 
 }
 .bjImage{
     width: 100vw;
@@ -16,13 +18,13 @@
 
 header{
     height: 12vh;
-    background-color: var(--yellow);
+    background-color: var(--Darkblue);
 }
 
 header ul{
     padding: 10px 20px;
     display: flex;
-    justify-content: right;
+    justify-content: flex-start;
 }
 
 header ul li{
@@ -37,14 +39,13 @@ header ul li a{
     font-family: sans-serif;
     padding: 5px 7px;
 }
-
-.active {
+.activeLink {
     background: #0e3a66;
     border: 4px solid white;
-    border-radius: 30%;
+    border-radius: 15px;
 }
-.active:hover{
-    background-color: gray;
+.activeLink:hover{
+    background-color: darkgoldenrod;
 }
 
 h1{
@@ -74,6 +75,33 @@ form{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
     text-align: center;
 }
+input[type=submit]{
+    background-color: #010f02;
+    border: none;
+    color: white;
+    padding: 3px 3px;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+
+.footer {
+    height: 70px;
+    width: 100%;
+    background-color: darkgray;
+    color: white;
+    text-align: center;
+    
+ }
+
+ .topLink{
+    text-decoration: none;
+    color: white;
+ }
+
+ .topLink:hover{
+     color: black;
+ }
 
 @media screen and (max-width:768px) {
  
@@ -89,7 +117,24 @@ form{
         border-bottom: 1px solid darkblue;
         text-align: center;
     }
+    .myForm{
+        margin-bottom: 1%;
+    }
     form{
         height: 40vh;
     }
+}
+
+@media screen and (max-width:425px) {
+    header{
+       height: fit-content;
+   }
+   header ul{
+       display: block;
+       padding: 8px 90px;
+   }
+   form{
+       height: 30vh;
+   }
+
 }

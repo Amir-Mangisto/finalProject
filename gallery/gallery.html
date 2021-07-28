@@ -8,14 +8,17 @@
     <link rel="stylesheet" href="gallery.css">
 </head>
 <body>
-    <header>
+    <div class="container">
+    <header id="topPage">
         <nav>
-            <ul>
-              <li><a class="active" href="#">גלריה</a></li>
-              <li><a class="active" href="#">בית</a></li>
-            </ul>
-          </nav>
-    </header>
+          <ul>
+            <li><a class="activeLink" href="../VIDEO/video.html">וידאו</a></li> 
+            <li><a class="activeLink" href="../gallery/gallery.html">גלריה</a></li> 
+            <li><a class="activeLink" href="../eulogy/eulogy.html">הספדים</a></li> 
+            <li><a class="activeLink" href="../index.html">בית</a></li>
+          </ul>
+        </nav>
+      </header>
     <div class="bjImg">
         <img src="../media/img/backimg.jpg" alt="">
     </div>
@@ -63,8 +66,14 @@
             </div>
         </section>
     </main>
-    <footer>
-
+    <footer class="footer">
+        <span>
+            @זכויות שמורות -
+        </span>
+        <a class="topLink" href="#topPage">
+            Top Page-click here
+        </a>
     </footer>
+</div>
 </body>
 </html>

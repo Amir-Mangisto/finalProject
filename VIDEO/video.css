@@ -2,17 +2,23 @@
     margin: 0;
     padding: 0;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-image: url(https://tse2.mm.bing.net/th?id=OIP.Lc7IPQszRPKW8P0LzxuGDAHaEK&pid=Api&P=0&w=325&h=183);
     background-repeat: no-repeat;
     background-size: cover;
 }
+:root{
+    --Darkblue:#0e3a66 
+}
 
 header{
     height: 12vh;
-    background-color: white;
+    background-color: var(--Darkblue);
 }
+
 header ul{
     padding: 10px 20px;
     display: flex;
@@ -27,32 +33,32 @@ header ul li{
 
 header ul li a{
     text-decoration: none;
-    color: black;
+    color: white;
     font-family: sans-serif;
     padding: 5px 7px;
 }
 
 .activeLink {
-    background: gold;
-    border: 4px solid black;
-    border-radius: 5px;
-    box-shadow: 5px;
+    background: #0e3a66;
+    border: 4px solid white;
+    border-radius: 15px;
 }
 
 .activeLink:hover{
-    background-color: rgb(46, 184, 11);
+    background-color: darkgoldenrod;
 }
 #firstPara{
     color: white;
     text-align: center;
 }
+
+
 .videos{
-    
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content:space-around;
-    height: 200vh;
+    height: fit-content;
 }
 
 .secondVideo{
@@ -65,8 +71,40 @@ header ul li a{
     text-align: center;
 }
 
+.titleShadow{
+    box-shadow: 0px -1px 8px 5px white;
+}
+
+.titleShadow2{
+    box-shadow: 0px -1px 8px 5px white;
+}
+
+.titleShadow3{
+    box-shadow: 0px -1px 12px 5px white;
+}
+
+.footer {
+    height: 70px;
+    width: 100%;
+    background-color: darkgray;
+    color: white;
+    text-align: center;
+    
+ }
+
+ .topLink{
+    text-decoration: none;
+    color: white;
+ }
+
+ .topLink:hover{
+     color: black;
+ }
+
 @media screen and (max-width:768px) {
- 
+    body{
+        width: auto;
+    }
     header{
         height: fit-content;
     }
@@ -79,19 +117,32 @@ header ul li a{
         border-bottom: 1px solid gold;
         text-align: center;
     }
-
-    
+    .firstVideo iframe{
+        width: 400px;
+        height: 215px;
+    }
+    .secondVideo iframe{
+        width: 400px;
+        height: 215px;
+    }
+    .thirdVideo iframe{
+        width: 400px;
+        height: 215px;
+    }
     
 }
  @media screen and (max-width:425px) {
-     header{
+     .topPage{
         height: fit-content;
+        width: fit-content;
     }
-    header ul{
+    .topPage ul{
         display: block;
-        padding: 8px 90px;
+        /* padding: 8px 90px; */
     }
 
     
 
 } 
+
+

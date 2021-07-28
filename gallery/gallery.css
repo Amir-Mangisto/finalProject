@@ -5,6 +5,12 @@
 body{
     background-color: #B2B1B9;
 }
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --Darkblue:#0e3a66 
+}
 
 .bjImg img{
     width: 400px;
@@ -16,8 +22,8 @@ body{
 @import url('https://fonts.googleapis.com/css2?family=Wendy+One&display=swap');
 
 header{
-height: 12vh;
-background-color: darkgoldenrod;
+    height: 12vh;
+    background-color: var(--Darkblue);
 }
 
 header ul{
@@ -39,15 +45,14 @@ header ul li a{
     padding: 5px 7px;
 }
 
-.active {
+.activeLink {
     background: #0e3a66;
     border: 4px solid white;
-    border-radius: 10px;
-    box-shadow: 5px;
+    border-radius: 15px;
 }
 
-.active:hover{
-    background-color: black;
+.activeLink:hover{
+    background-color: darkgoldenrod;
 }
 .slider{
     width: 90%;
@@ -98,7 +103,23 @@ h1{
     filter: grayscale(0) blur(0px) contrast(120%);
 }
 
+.footer {
+    height: 70px;
+    width: 100%;
+    background-color: darkgray;
+    color: white;
+    text-align: center;
+    
+ }
 
+ .topLink{
+    text-decoration: none;
+    color: white;
+ }
+
+ .topLink:hover{
+     color: black;
+ }
 
 
 @keyframes sideToside {
@@ -120,7 +141,7 @@ h1{
 } 
 
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:768px)  {
  
     header{
         height: fit-content;
@@ -135,7 +156,7 @@ h1{
         text-align: center;
     }
     .bjImg img{
-        width: 400px;
+        width: 300px;
         height: 8vh;
         margin-left: 33%;
         margin-top: 2%;
@@ -144,6 +165,7 @@ h1{
     
 }
  @media screen and (max-width:425px) {
+    
      header{
         height: fit-content;
     }
@@ -152,7 +174,7 @@ h1{
         padding: 8px 90px;
     }
     .bjImg img{
-        width: 200px;
+        width: 150px;
         height: 8vh;
         margin-left: 33%;
         margin-top: 2%;
