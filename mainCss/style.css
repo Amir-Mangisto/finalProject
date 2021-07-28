@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html{
@@ -142,7 +143,7 @@ h1{
         justify-content: center;
     }
     header ul li{
-        border-bottom: 1px solid darkblue;
+        border-bottom: 1px solid darkgoldenrod;
         text-align: center;
     }
     .roniImage{
